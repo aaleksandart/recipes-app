@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Righteous&display=swap');
+/* 
+font-family: 'Permanent Marker', cursive;
+font-family: 'Righteous', cursive;
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background-color: #e9eaeb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +18,30 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} 
+
+/* body {
+  @apply: bg-gray-200;
+} */
+
+.righteous-font {
+  font-family: 'Righteous', cursive;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.marker-font {
+  font-family: 'Permanent Marker', cursive;
 }
+
+/* @layer components {
+  :root {
+    @apply bg-zinc-100;
+  }
+} */
+
+/* .test-css {
+  text-shadow:
+    1px  1px 1px black,
+    1px -1px 1px black,
+   -1px  1px 1px black,
+   -1px -1px 1px black;
+} */
